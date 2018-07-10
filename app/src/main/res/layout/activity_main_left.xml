@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/home_left_Lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/left_side_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="50dp"
+            android:src="@drawable/user_slide" />
+
+        <!--item：查询页面-->
+        <LinearLayout
+            android:id="@+id/home_left_itemSearch_lin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="11dp"
+                    android:src="@drawable/search_slide" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="search"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!--item：记录-->
+        <LinearLayout
+            android:id="@+id/home_left_itemRecords_lin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/recorde_slide" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="records"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!--item：电话簿-->
+        <LinearLayout
+            android:id="@+id/home_left_itemTel_lin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/service_slide" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:text="service"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

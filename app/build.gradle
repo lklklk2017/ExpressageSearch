@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+//使用greendao
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.cdxxgc.expressagesearchdemo"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //greendao配置
+    greendao {
+        //配置版本号
+        schemaVersion 1
+        daoPackage 'com.cdxxgc.expressagesearchdemo.db'
+        targetGenDir 'src/main/java'
+    }
+
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    /*网络请求相关*/
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    /*图片加载框架*/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    /*二维码扫描框架*/
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    /*greendao依赖*/
+    compile 'org.greenrobot:greendao:3.0.1'
+    /*design-Snackbar*/
+    compile 'com.android.support:design:26.0.0-alpha1'
+//    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.12'
+    /*数据库调试工具*/
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
+}
+

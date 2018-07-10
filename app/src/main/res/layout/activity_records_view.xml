@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_records_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.cdxxgc.expressagesearchdemo.RecordsPage.RecordsView">
+
+    <!--ActionBar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tel_back_IMG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onBack"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="查询记录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recodes_rcy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--android:background="@color/left_side_bg"-->
+        <LinearLayout
+            android:id="@+id/recode_blankLin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/recodes_blankImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/list_blank" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="数据君表示什么也没找到~"
+                android:textColor="@color/grgray"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

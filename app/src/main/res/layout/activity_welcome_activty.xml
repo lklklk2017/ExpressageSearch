@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lk="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_welcome_activty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cdxxgc.expressagesearchdemo.WelcomeActivty">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome"
+        android:scaleType="centerInside"
+        />
+
+    <com.cdxxgc.expressagesearchdemo.widget.CustomCountDown
+        android:id="@+id/count"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        lk:circleColor="@android:color/holo_red_dark"
+        lk:circleWidth="3dp"
+        android:padding="5dp"
+        lk:second="5"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>

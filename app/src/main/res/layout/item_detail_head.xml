@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_item_head"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <!--icon-->
+    <ImageView
+        android:id="@+id/detail_item_head_IMG"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="90dp"
+        android:background="@android:color/white"
+        android:src="@drawable/finish" />
+
+    <!--line-->
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/detail_item_head_IMG"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray" />
+
+    <!--date-->
+    <TextView
+        android:id="@+id/detail_item_head_date_TV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="15sp" />
+
+    <!--time-->
+    <TextView
+        android:id="@+id/detail_item_head_time_TV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_item_head_date_TV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="15sp" />
+
+    <!--content-->
+    <TextView
+        android:id="@+id/detail_item_head_content_TV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/detail_item_head_IMG"
+        android:gravity="center|start"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:text="content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

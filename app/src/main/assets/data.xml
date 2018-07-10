@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Companys>
+    <Company>
+        <name>顺丰速运</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95338</tel>
+        <companyCode>SF</companyCode>
+    </Company>
+
+    <Company>
+        <name>百世快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95320</tel>
+        <companyCode>HTKY</companyCode>
+    </Company>
+
+    <Company>
+        <name>中通快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95311</tel>
+        <companyCode>ZTO</companyCode>
+    </Company>
+
+    <Company>
+        <name>申通快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95543</tel>
+        <companyCode>STO</companyCode>
+    </Company>
+
+    <Company>
+        <name>圆通速递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95554</tel>
+        <companyCode>YTO</companyCode>
+    </Company>
+
+    <Company>
+        <name>韵达速递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95546</tel>
+        <companyCode>YD</companyCode>
+    </Company>
+
+    <Company>
+        <name>邮政快递包裹</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>11183</tel>
+        <companyCode>YZPY</companyCode>
+    </Company>
+
+    <Company>
+        <name>EMS</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>11183</tel>
+        <companyCode>EMS</companyCode>
+    </Company>
+
+    <Company>
+        <name>天天快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>400-188-8888</tel>
+        <companyCode>HHTT</companyCode>
+    </Company>
+
+    <Company>
+        <name>京东物流</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>950616</tel>
+        <companyCode>JD</companyCode>
+    </Company>
+
+    <Company>
+        <name>全峰快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>400-100-0001</tel>
+        <companyCode>QFKD</companyCode>
+    </Company>
+
+    <Company>
+        <name>国通快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95327</tel>
+        <companyCode>GTO</companyCode>
+    </Company>
+
+    <Company>
+        <name>优速快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95349</tel>
+        <companyCode>UC</companyCode>
+    </Company>
+
+    <Company>
+        <name>德邦</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>95353</tel>
+        <companyCode>DBL</companyCode>
+    </Company>
+
+    <Company>
+        <name>快捷快递</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>4008-333-666</tel>
+        <companyCode>FAST</companyCode>
+    </Company>
+
+    <Company>
+        <name>宅急送</name>
+        <res_imgId>R.drawable.search</res_imgId>
+        <tel>400-6789-000</tel>
+        <companyCode>ZJS</companyCode>
+    </Company>
+
+</Companys>

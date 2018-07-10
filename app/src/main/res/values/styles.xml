@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!--Detail style-->
+    <style name="DetailTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ff9500</item><!--#ff9500-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--dectorView 中的title 如果为true  则会去除title  留出更多的空间-->
+        <item name="android:windowNoTitle">true</item>
+        <!--设置dialog  true 代表悬浮模式，window大小和实际布局相关  如果false window全屏-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+        <!--WelcomePage-->
+    <style name="WelcomePageStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+</resources>

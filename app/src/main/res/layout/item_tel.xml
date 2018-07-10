@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tel_item"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    >
+
+    <!--图标-->
+    <ImageView
+        android:id="@+id/tel_item_portrait_IMG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="10dp"
+        />
+    <!--公司名-->
+    <TextView
+        android:id="@+id/tel_item_compName_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Express Name"
+        android:layout_toRightOf="@id/tel_item_portrait_IMG"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        />
+    <!--电话-->
+    <TextView
+        android:id="@+id/tel_item_tel_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel"
+        android:layout_toRightOf="@id/tel_item_portrait_IMG"
+        android:layout_below="@id/tel_item_compName_TV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

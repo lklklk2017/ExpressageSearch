@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.cdxxgc.expressagesearchdemo.DetailPage.DetailView">
+
+    <!--ActionBar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#ff9500"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_back_IMG"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="物流详情"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/detail_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="9.2">
+            <!--快递公司详情-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center_vertical">
+                <!--公司头像-->
+                <ImageView
+                    android:id="@+id/detail_headProt_IMG"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <!--公司名称-->
+                <TextView
+                    android:id="@+id/detail_compName_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/detail_headProt_IMG"
+                    android:text="Company Name" />
+
+                <!--运单编号-->
+                <TextView
+                    android:id="@+id/detail_expressId_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detail_compName_TV"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/detail_headProt_IMG"
+                    android:text="Express Id" />
+
+
+            </RelativeLayout>
+
+            <!--快递信息公告栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.7"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/white"
+                    android:text="快递信息"
+                    android:textSize="15dp" />
+
+                <!--耗时-->
+                <TextView
+                    android:id="@+id/detail_sumtime_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/white"
+                    android:text="耗时："
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+
+            <!--物流信息-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detail_rcy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                android:background="@android:color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

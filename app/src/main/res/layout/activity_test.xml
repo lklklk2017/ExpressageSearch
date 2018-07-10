@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cdxxgc.expressagesearchdemo.TestActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试页面" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/test_ed1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="id" />
+
+        <EditText
+            android:id="@+id/test_ed2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/test_ed3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="age" />
+
+        <EditText
+            android:id="@+id/test_ed4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="P4" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCreatDB"
+        android:text="创建" />
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onInsert"
+        android:text="插入" />
+
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDelet"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/bt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onQuery"
+        android:text="查询" />
+
+    <Button
+        android:id="@+id/bt_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDrop"
+        android:text="删除数据库" />
+
+
+    <TextView
+        android:id="@+id/test_colums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="columns" />
+
+    <TextView
+        android:id="@+id/test_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="content" />
+
+</LinearLayout>
